@@ -1,0 +1,260 @@
+/*********************************/
+/* 공통 */
+/*********************************/
+
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+
+#wrapper {
+  /* border: 1px solid grey; */
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1300px; /* 너비 */
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 1px rgba(153, 157, 158, 0.75);
+  margin: 2em 0;
+}
+
+hr.major {
+  margin-top: 35px;
+}
+
+hr.major2 {
+  margin-top: 50px;
+}
+
+.space4 {
+  padding: 4px;
+  /* border: 1px solid grey; */
+}
+.space10 {
+  padding: 10px;
+  /* border: 1px solid grey; */
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+#header {
+  /* border: 1px solid grey; */
+  width: 100%; /*  너비 */
+  height: 100px; /* 높이 */
+}
+
+/* 로고 */
+.logo {
+  float: left;
+  width: 90px; /*  너비 */
+  height: 90px; /* 높이 */
+  line-height: 150px; /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 20px; /* 왼쪽에 여백 */
+}
+.logo > img {
+  width: 140px;
+  line-height: 100px; /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 10px; /* 왼쪽에 여백 */
+}
+
+/* 상단 메뉴(내비게이션) */
+nav {
+  /* border: 1px solid grey; */
+  float: left;
+  width: 800px; /*   너비 */
+  height: 30px; /* 메뉴 영역 높이 */
+  padding: 0px;
+  padding-top: 58px;
+  padding-left: 150px;
+  color: #fff;
+}
+#menu > ul > li {
+  /* border: 1px solid grey; */
+  float: left;
+  width: 120px;
+  padding: 0px 30px 0px 0px;
+  color: #fff;
+}
+
+#menu > ul > li > a:link,
+a:visited {
+}
+#menu > ul > li > a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #f00;
+}
+
+/* 상단 로그인 부분 */
+.h_menu1 {
+  /* border: 1px solid grey; */
+  margin: 0.8em;
+}
+.welcom_name {
+  display: inline-block;
+  /* border: 1px solid grey; */
+  height: 30px;
+  width: 190px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.h_menu1 > li {
+  /* border: 1px solid grey; */
+  float: right;
+  width: 95px;
+  height: 30px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h_menu1 > li > a {
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+.h_menu1 > li > a:link,
+a:visited {
+}
+.h_menu1 > li > a:hover {
+  font-weight: bold;
+}
+
+/********************************/
+/*  검색    */
+/********************************/
+#search {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px 25px 0px;
+  margin: 20px;
+}
+/* select box */
+.searchboxdiv {
+  display: inline-block;
+}
+#searchbox {
+  width: 100px;
+  height: 40px;
+  padding: 0.8em 0.5em;
+  margin-right: 10px;
+  border: 1px solid #eb0808;
+  background: url("../images/arrow.png") no-repeat 95% 50%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  appearance: none;
+}
+/* select box 클릭했을때 흰 테두리로 바뀌는 것 -> 빨간테두리로 */
+#searchbox:focus {
+  border: 1px solid #eb0808;
+  outline: none;
+}
+#searchbox option {
+  display: inline-block;
+  background: #000000;
+}
+
+/* 검색창 */
+#searchkeyword {
+  border: 1px solid #eb0808;
+  background: #eb0808;
+}
+#searchkeyword > input {
+  font-size: 16.3px;
+  width: 325px;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  background: #000000;
+  color: #fff;
+}
+/* 검색창 버튼*/
+#searchkeyword > button {
+  width: 60px;
+  height: 100%;
+  border: 0px;
+  background: #eb0808;
+  color: #fff;
+}
+
+/********************************/
+/*   이미지 슬라이드 쇼 영역    */
+/********************************/
+.slideShow {
+  border: 1px solid rgb(61, 61, 61);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slides {
+  object-fit: cover;
+}
+.slides0 {
+  width: 600px;
+  position: absolute;
+  left: 400px;
+  top: 270px;
+}
+/********************************/
+/*  조회 많은 인기 도서    */
+/********************************/
+.list_title > h2 {
+  margin-left: 18px;
+}
+
+.list,
+.best_list {
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: center;
+}
+.list > ul > li {
+  /* border: 1px solid grey; */
+  float: left;
+  width: 174px;
+  margin: 20px;
+  text-align: center;
+}
+
+.bookimage > img {
+  width: 174px;
+  height: 235px;
+  margin-bottom: 5px;
+}
+
+/******************/
+/*   푸터 영역    */
+/******************/
+
+footer {
+  width: 100%; /* 너비 */
+  height: 100px; /* 높이 */
+}
+p {
+}
+#company {
+}
+

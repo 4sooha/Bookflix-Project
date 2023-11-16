@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;600,700&display=swap");
+body {
+  line-height: 2em;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#mainWrapper {
+  /* border: 1px solid rgb(245, 184, 52); */
+  width: 700px;
+  margin: 0 auto; /*가운데 정렬*/
+}
+/* list 페이지 쓰기 버튼*/
+#l_r_btndiv {
+  /* border: 1px solid rgb(58, 139, 47); */
+  float: left;
+  width: 100%;
+}
+#tot_cnt {
+  font-size: 13px;
+  display: inline-block;
+}
+#l_r_btndiv > button {
+  width: 50px;
+  height: 30px;
+  border: 0px;
+  background: #d33131;
+  color: #fff;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  font-size: 12px;
+  float: right;
+}
+
+/* #ulTable > ul > li:first-child {
+  border: 1px solid rgb(58, 139, 47);
+  text-align: center;
+  font-size: 14pt;
+  height: 0px;
+  vertical-align: middle;
+  line-height: 30px;
+} */
+
+#ulTable {
+  /* border: 1px solid rgb(203, 240, 41); */
+  margin-top: 0px;
+}
+
+#ulTable > li:first-child > ul > li {
+  border-top: 3px solid rgb(255, 2, 2);
+  border-bottom: 1px solid rgb(255, 2, 2);
+  font-weight: bold;
+  text-align: center;
+}
+
+#ulTable > li > ul {
+  clear: both;
+  padding: 0px auto;
+  position: relative;
+  min-width: 40px;
+}
+#ulTable > li > ul > li {
+  float: left;
+  font-size: 10pt;
+  border-bottom: 1px solid silver;
+  vertical-align: baseline;
+}
+
+#ulTable > li > ul > li:first-child {
+  width: 8%;
+  text-align: center;
+} /*No 열 크기*/
+#ulTable > li > ul > li:first-child + li {
+  width: 52%;
+} /*제목 열 크기*/
+#ulTable > li > ul > li:first-child + li + li {
+  width: 17%;
+  text-align: center;
+} /*작성일 열 크기*/
+#ulTable > li > ul > li:first-child + li + li + li {
+  width: 15%;
+  text-align: center;
+} /*작성자 열 크기*/
+#ulTable > li > ul > li:first-child + li + li + li + li {
+  width: 8%;
+  text-align: center;
+} /*조회수 열 크기*/
+
+#divPaging {
+  /* border: 1px solid red; */
+  clear: both;
+  margin: 0 auto;
+  width: 380px;
+  height: 30px;
+  color: #797979;
+  text-align: center;
+  margin-top: 40px;
+}
+#Pag {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+
+#liSearchOption {
+  clear: both;
+}
+#liSearchOption > div {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/********************************/
+/*  검색    */
+/********************************/
+#search {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px 25px 0px;
+  margin: 20px;
+}
+/* select box */
+.searchboxdiv {
+  display: inline-block;
+}
+#selSearchOption {
+  width: 80px;
+  height: 30px;
+  padding: 0.8em 0.5em;
+  margin-right: 10px;
+  border: 1px solid #d33131;
+  background: url("../images/arrow.png") no-repeat 95% 50%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #111111;
+  appearance: none;
+  font-size: 11px;
+}
+/* select box 클릭했을때 흰 테두리로 바뀌는 것 -> 빨간테두리로 */
+#txtKeyWord:focus {
+  border: 1px solid #d33131;
+  outline: none;
+}
+/* 검색창 */
+#txtKeyWord {
+  border: 1px solid #d33131;
+}
+#txtKeyWord > input {
+  font-size: 12px;
+  width: 325px;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  color: #000000;
+}
+/* 검색창 버튼*/
+#liSearchOption button {
+  width: 50px;
+  height: 30px;
+  border: 0px;
+  background: #d33131;
+  color: #fff;
+}
+
+/********************************/
+/*  게시판 상세보기    */
+/********************************/
+#mainWrapper_view {
+  /* border: 1px solid #250eac; */
+  width: 700px;
+  margin: 0 auto; /*가운데 정렬*/
+  font-size: 10pt;
+}
+
+#frm > table {
+  width: 700px;
+  height: 300px;
+  border-top: 3px solid rgb(255, 2, 2);
+  margin-top: 50px;
+}
+th,
+tr,
+td {
+  border-bottom: 1px solid silver;
+}
+.view_text > textarea {
+  width: 693px;
+  height: 230px;
+  margin-bottom: 10px;
+}
+
+/* write 페이지 버튼*/
+#txtbtndiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#txtbtndiv > button {
+  width: 50px;
+  height: 30px;
+  border: 0px;
+  background: #d33131;
+  color: #fff;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+/********************************/
+/*  사서추천 recommend 리스트    */
+/********************************/
+
+#ulTable_reco {
+  /* border: 1px solid rgb(203, 240, 41); */
+  margin-top: 0px;
+}
+
+#ulTable_reco > li:first-child > ul > li {
+  border-top: 3px solid rgb(255, 2, 2);
+  border-bottom: 1px solid rgb(255, 2, 2);
+  font-weight: bold;
+  text-align: center;
+}
+
+#ulTable_reco > li > ul {
+  clear: both;
+  padding: 0px auto;
+  position: relative;
+  min-width: 40px;
+}
+#ulTable_reco > li > ul > li {
+  float: left;
+  font-size: 10pt;
+  border-bottom: 1px solid silver;
+  vertical-align: baseline;
+}
+
+#ulTable_reco > li > ul > li:first-child {
+  width: 10%;
+  text-align: center;
+} /*No 열 크기*/
+#ulTable_reco > li > ul > li:first-child + li {
+  width: 58%;
+} /*제목 열 크기*/
+#ulTable_reco > li > ul > li:first-child + li + li {
+  width: 17%;
+  text-align: center;
+} /*작성일 열 크기*/
+#ulTable_reco > li > ul > li:first-child + li + li + li {
+  width: 15%;
+  text-align: center;
+} /*조회수 열 크기*/
+
+/* recommend list 전체 글 개수 */
+#reco_tot_cnt {
+  /* border: 1px solid rgb(42, 101, 209); */
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+  /********************************/
+/*  사서추천 recommend 상세보기    */
+/********************************/
+/* #dataContainer{
+  border: 1px solid rgb(203, 240, 41);
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

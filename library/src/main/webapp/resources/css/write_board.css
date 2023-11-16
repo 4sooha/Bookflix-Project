@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* form 전체 부분 */
+#t10 {
+  text-align: center;
+  margin-top: 100px;
+}
+/* 테이블 전체적인 부분 */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border: 3px double rgb(221, 212, 212);
+  width: 600px;
+  height: 500px;
+  box-shadow: 0px 0px 10px rgb(248, 59, 163);
+}
+/* 게시판 글쓰기 */
+.t1 {
+  height: 30px;
+}
+/* 게시판 글쓰기 */
+.t2 {
+  font-size: 50px;
+  font-weight: 900;
+  border-bottom: 4px solid rgb(245, 15, 15);
+  text-align: center;
+}
+/* 테이블 열 */
+th {
+  font-size: 27px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #fa1111;
+  border: 1px solid #ccc;
+  background: #ffeef6;
+}
+/* 테이블 행 */
+td {
+  font-size: 30px;
+  width: 349px;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+/* 제목 쓰는 부분 */
+.t3 {
+  font-size: 20px;
+}
+/* 내용 쓰는 부분 */
+.t4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* 등록하기 버튼 디자인*/
+#btnWrite {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  color: red;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px red inset;
+  }
+}
+/* 취소버튼 디자인 */
+#t5 {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+  z-index: 1;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#t5:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: white;
+  transition: all 0.3s ease;
+}
+#t5:hover {
+  color: red;
+}
+#t5:hover:after {
+  top: 0;
+  height: 100%;
+}
+#t5:active {
+  top: 2px;
+}

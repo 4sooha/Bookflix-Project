@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;600,700&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+nav {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+}
+.h_menu1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+.welcom_name {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* book view */
+#v_title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+#v_author,
+#v_publisher {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.go_buy,
+.go_rent,
+.library {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.go_btn {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}

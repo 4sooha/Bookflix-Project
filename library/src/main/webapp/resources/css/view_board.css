@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* 전체영역 */
+#v1 {
+  margin-top: 100px;
+}
+/* 게시글 샹세보기 부분 */
+#v2 {
+  width: 800px;
+  height: 100px;
+  margin: 1rem auto;
+  font-size: 35px;
+  text-align: center;
+  border-bottom: 2px dotted rgba(219, 216, 216, 0.801);
+}
+/* form 영역 */
+#v3 {
+  margin-top: 0;
+}
+/* 테이블 부분 */
+.v4 {
+  border-collapse: collapse;
+  width: 800px;
+  height: 550px;
+  margin: 1rem auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(248, 174, 215);
+}
+/* .v5 {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* 테이블 행 */
+td {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+/* 테이블 열 */
+th {
+  padding: 8px;
+
+  text-align: center;
+  border: 2px solid #fab2da;
+  background-color: rgb(252, 243, 249);
+  color: #000;
+}
+/* 제목 쓰는 부분 */
+.vv7 {
+  font-size: 28px;
+  font-weight: 400;
+}
+/* 내용 쓰는 부분 */
+.vv8 {
+  font-size: 25px;
+  font-weight: 600;
+}
+/* 수정,삭제버튼 */
+#v6 {
+  width: 800px;
+  height: 100px;
+  margin: 1rem auto;
+  text-align: center;
+}
+/* 수정하기 버튼 디자인 */
+#btnUpdate {
+  padding: 20px 40px;
+  font-size: 15px;
+
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+
+  background: #f0f1f1;
+  color: black;
+}
+#btnUpdate:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-transform: scale3d(0.8, 0.5, 1);
+  transform: scale3d(0.8, 0.5, 1);
+}
+#btnUpdate:hover {
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  color: #eceff1;
+  background-color: #fd3737;
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+
+/* #btnUpdate::before {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+} */
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* 삭제 버튼 */
+#btnDelete {
+  padding: 20px 40px;
+  font-size: 15px;
+  background: #eceff1;
+  color: black;
+}
+
