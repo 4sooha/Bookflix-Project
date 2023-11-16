@@ -18,5 +18,5 @@ function showSlides() {
         }
         slides[slideIndex - 1].style.display = "block";
     
-        setTimeout(showSlides, 3500); // 3.5초마다 이미지가 체인지됩니다
+        setTimeout(showSlides, 3500); // 3.5초마다 이미지 체인지
 }
