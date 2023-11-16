@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello world!gggggggggggg
+	Hello world!
 </h1>
 
 <a href="/library/book/list.do">move</a>
