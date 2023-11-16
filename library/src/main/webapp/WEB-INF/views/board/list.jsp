@@ -14,10 +14,7 @@
 
 <script>
     function checkLogin() {
-        var userId = '${sessionScope.userId}'; // 방법1
-        // 방법2 방법2
-        /* var id = '<c:out value='${sessionScope.userId}' /> 
-        alert(userId); */
+        var userId = '${sessionScope.userId}'; 
         if (userId == '') {
             alert("로그인 후 글쓰기가 가능합니다.");
             return false;
